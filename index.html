@@ -8,32 +8,34 @@
   </head>
   <body>
     <h1>Cadastro de pessoas</h1>
-    <form class="form js-form">
-      <label for="name">
-        Nome
-        <input
-          class="form-field js-field"
-          id="name"
-          minlength="3"
-          maxlength="120"
-          name="name"
-          pattern="[A-Za-zÁ-Üá-ü\s]*"
-          required
-          type="text"
-        />
-      </label>
-      <label for="birth-date">
-        Data de Nascimento
-        <input
-          class="form-field js-field"
-          id="birth-date"
-          name="birth-date"
-          required
-          type="date"
-        />
-      </label>
-      <button type="submit">Salvar</button>
-    </form>
+      <form class="form js-form">
+        <label for="name">
+          Nome:
+          <input
+            class="form-field js-field"
+            id="name"
+            data-index="new"
+            minlength="3"
+            maxlength="120"
+            name="name"
+            placeholder="Digite seu nome completo aqui. Exemplo: João Almeida"
+            pattern="[A-Za-zÁ-Üá-ü\s]*"
+            required
+            type="text"
+          />
+        </label>
+        <label for="birth-date">
+          Data de Nascimento:
+          <input
+            class="form-field js-field"
+            id="birth-date"
+            name="birth-date"
+            required
+            type="date"
+          />
+        </label>
+        <button type="submit" id="save">Salvar</button>
+      </form>
     <table id="tableClient" hidden>
       <thead>
         <th>Nome</th>

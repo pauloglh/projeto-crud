@@ -1,0 +1,112 @@
+:root {
+   --bg-color:#EDF7F6;
+   --bg-blue-color:#2660A4;
+   --title-color:#ffffff;
+   --bg-button:#6ce684;
+   --bg-button-hover:#3dc959;
+   --bg-button-editar:#6ce684; 
+   --bg-button-editar-hover:#3dc959; 
+   --bg-button-excluir:#e45353;
+   --bg-button-excluir-hover:#e43a3a;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+body > h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 175px;
+    background-color: var(--bg-blue-color);
+    color: var(--title-color);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.5em;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    width: 130px;
+    background-color: var(--bg-button);
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+button:hover {
+    background-color: var(--bg-button-hover);
+}
+
+table {
+    margin: 2rem 4rem;
+    width: 90vw;
+    padding: 10px;
+    background-color: var(--bg-blue-color);
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+
+th{
+    color: var(--title-color);
+    text-align: center;
+}
+
+td{
+    color: var(--title-color);
+    text-align: center;
+}
+
+
+.js-form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 2rem 4rem;
+    width: 300px;
+    font-size: 1.5rem;
+}
+
+.form-field{
+    padding: 10px;
+    border-radius: 5px;
+    width: 500px;
+    border: none;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.242);
+}
+
+.button-client{
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    margin-right: 10px;
+}
+
+.button-editar {
+    background-color: var(--bg-button-editar);
+}
+
+.button-editar:hover{
+    background-color: var(--bg-button-editar-hover);
+}
+
+.button-excluir {
+    background-color: var(--bg-button-excluir);
+}
+
+.button-excluir:hover {
+    background-color: var(--bg-button-excluir-hover);
+}
